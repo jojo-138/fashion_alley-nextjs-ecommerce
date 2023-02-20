@@ -2,10 +2,6 @@
 
 ## About The Project :thought_balloon:
 
----
-
-<br />
-
 This project is an e-commerce site built using Next.js for both front-end and back-end. Please check out [Technologies](#technologies-🔧) and [Features](#features-⚡) for more information.
 <br>
 The purpose of this project is to not only learn Next.js but also deepen my understanding about PostgreSQL, Server-side rendering, SEO, Service Workers / PWA, and Caching.
@@ -17,10 +13,6 @@ Visit [Future Plans](#future-plans) section to see what I plan to add to this re
 _Note: The products shown on this website is not my own creation. They are from another e-commerce site._
 
 ## Technologies :wrench:
-
----
-
-<br />
 
 - Next.js (React)
 - Javascript
@@ -34,10 +26,6 @@ _Note: The products shown on this website is not my own creation. They are from 
 
 ## Features :zap:
 
----
-
-<br />
-
 - Authentication using Iron-session
 - PostgreSQL Full-text Search with weight and rank utilizing Materialized View
 - Stripe Checkout, Invoice, and Customer API for checkout, payment, and order history
@@ -50,10 +38,6 @@ _Note: The products shown on this website is not my own creation. They are from 
 
 ## Stripe Checkout Test Card Information :credit_card:
 
----
-
-<br />
-
 ```
 Stripe Checkout Test Card Information:
 - Card number: 4242 4242 4242 4242
@@ -62,10 +46,6 @@ Stripe Checkout Test Card Information:
 ```
 
 ## Screenshots :camera:
-
----
-
-<br />
 
 ### Home Page
 
@@ -105,17 +85,9 @@ Stripe Checkout Test Card Information:
 
 ## Database Design :floppy_disk:
 
----
-
-<br />
-
 ![Database Design](https://user-images.githubusercontent.com/101021415/220101115-b96e2561-71ac-411b-ba43-713be0b13c84.PNG)
 
 ## Issues
-
----
-
-<br />
 
 - Customer default address cannot be forwarded to Stripe Checkout as they do not offer pre-filled address on the first checkout.
 - Address used during checkout process is currently not saved to the database under the user's account.
@@ -123,10 +95,6 @@ Stripe Checkout Test Card Information:
 - Product descriptions an details are sample texts except for T-shirts and Blouses categories.
 
 ## Future Plans
-
----
-
-<br />
 
 - Change user default address based on latest invoice shipping address and move the previous default address to 'Other Addresses'
 - Enable customer to create one or more wishlist collections
