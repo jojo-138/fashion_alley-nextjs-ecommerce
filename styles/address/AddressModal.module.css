@@ -1,0 +1,21 @@
+.container {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.container form {
+  margin-top: 1rem;
+}
+
+.checkbox {
+  margin-bottom: 1rem;
+}

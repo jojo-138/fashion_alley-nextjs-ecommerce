@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-block: 7vh;
+}
+
+.verticalLine {
+  border-right: 1px solid #8080809d;
+  margin-inline: 5%;
+}
+
+@media (max-width: 720px) {
+  .verticalLine {
+    margin-inline: 5%;
+  }
+}

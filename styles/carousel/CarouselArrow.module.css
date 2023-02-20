@@ -1,0 +1,21 @@
+.container {
+  height: 0;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 41%;
+  transform: translateY(-36%);
+  cursor: pointer;
+  color: #2b2b2ba2;
+}
+
+.arrowLeft {
+  left: 5px;
+}
+
+.arrowRight {
+  right: 5px;
+}

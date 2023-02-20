@@ -1,0 +1,48 @@
+.container {
+  margin-bottom: 1.5rem;
+}
+
+.container label {
+  font-size: 0.9rem;
+}
+
+.inputContainer {
+  border: 1px solid var(--color-tertiary);
+  height: 3rem;
+  position: relative;
+  margin-block: 0.5rem;
+}
+
+.inputContainer input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding-inline: 1rem 2.5rem;
+  background-color: var(--bg-color-primary);
+  color: var(--color-primary);
+}
+
+.inputContainer .invalid {
+  background-color: #ff411c1a;
+}
+
+.inputContainer.invalid {
+  border-color: #bf4123;
+}
+
+.inputContainer span {
+  position: absolute;
+  right: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-tertiary);
+  cursor: pointer;
+}
+
+.error {
+  color: #bf4123;
+  font-size: 0.8rem;
+  margin: 0;
+  letter-spacing: 0.05rem;
+}

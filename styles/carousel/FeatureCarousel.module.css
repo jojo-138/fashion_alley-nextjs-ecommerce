@@ -1,0 +1,15 @@
+.fader {
+  aspect-ratio: 2 / 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.faderSlide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}

@@ -1,0 +1,84 @@
+.footer {
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer b {
+  font-size: 1rem;
+}
+
+.footer ul {
+  margin-block: 0.5rem 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.4rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.facebook {
+  color: #4267b2;
+}
+
+.instagram {
+  color: #d6249f;
+}
+
+.pinterest {
+  color: #e60023;
+}
+
+.madeBy {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 0.7rem;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .email {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 341px) {
+  .footer {
+    padding: 0.7rem 0;
+    gap: 0.5rem;
+  }
+
+  .footer > div {
+    gap: 0.1rem;
+  }
+
+  .policies,
+  .contacts {
+    grid-column: span 2;
+  }
+}

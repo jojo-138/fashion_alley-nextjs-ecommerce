@@ -1,0 +1,24 @@
+.container p {
+  margin: 0;
+}
+
+.container a {
+  border-bottom: 1px solid var(--color-secondary);
+  padding-bottom: 0.05rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.container a:hover {
+  color: var(--color-secondary);
+}
+
+.address {
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1130px) {
+  .container {
+    text-align: center;
+  }
+}

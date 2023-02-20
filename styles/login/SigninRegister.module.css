@@ -1,0 +1,18 @@
+.form {
+  color: var(--color-secondary);
+  width: 350px;
+}
+
+.form h1 {
+  text-align: center;
+}
+
+.forgot {
+  text-align: center;
+  margin-block: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}

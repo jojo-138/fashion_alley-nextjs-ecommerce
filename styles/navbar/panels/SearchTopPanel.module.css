@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  max-width: 1165px;
+  margin-inline: auto;
+  padding-inline: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.container input {
+  width: 100%;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  padding-inline: 1rem;
+}

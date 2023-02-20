@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100vh;
+  padding-block: 1rem;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8080804b;
+  margin-inline: 3rem;
+}
+
+.container h3 {
+  margin-inline: 3rem;
+  text-align: center;
+}
+
+.container h3 a {
+  text-decoration: underline;
+}
+
+.cartItems {
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 3rem;
+}
+
+.subtotalCheckoutWrap {
+  border-top: 1px solid #8080804b;
+  margin-inline: 3rem;
+}
+
+.subtotalCheckoutWrap > p {
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.subtotalCheckoutWrap button {
+  color: var(--color-primary);
+  padding: 0.8rem;
+  margin-block: 1rem;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border: 1px solid var(--color-secondary);
+  transition: background-color 0.3s, color 0.2s ease-in-out;
+}
+
+.subtotalCheckoutWrap button:hover {
+  background-color: var(--color-secondary);
+  color: var(--bg-color-primary);
+}
+
+.subtotalCheckoutWrap .error {
+  color: #bf4123;
+  margin-bottom: 0;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.subtotal p:first-child {
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.spinner {
+  animation: spin infinite 1s steps(8);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    gap: 0.75rem;
+    padding-block: 0.5rem;
+  }
+
+  .container header {
+    margin-inline: 1.5rem;
+  }
+
+  .container header h1 {
+    margin-block: 0.75rem;
+  }
+
+  .cartItems {
+    margin-left: 1.5rem;
+  }
+
+  .subtotalCheckoutWrap {
+    margin-inline: 1.5rem;
+  }
+
+  .subtotal {
+    margin-top: 0;
+  }
+}

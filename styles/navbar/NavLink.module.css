@@ -1,0 +1,48 @@
+.navLink {
+  position: relative;
+}
+
+.sideNavLink {
+  padding: 1rem;
+}
+
+.navLink:last-of-type,
+.sideNavLink:last-of-type {
+  color: #bf4123;
+  order: 5;
+}
+
+.navLink::before {
+  content: '';
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+.navLink:last-of-type::before {
+  background-color: #bf4123;
+}
+
+.navLink:hover::before {
+  transform: scaleX(1);
+}
+
+.navLink.active::before {
+  transform: scaleX(1);
+}
+
+.sideNavLink:hover,
+.sideNavLink.active {
+  border-left: 5px solid var(--color-primary);
+  background-color: var(--color-tertiary);
+}
+
+.navLink.active,
+.sideNavLink.active {
+  font-weight: 600;
+}

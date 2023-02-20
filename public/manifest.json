@@ -1,0 +1,19 @@
+{
+  "name": "Fashion Alley",
+  "description": "Fashion Alley is the authority on fashion & the go-to retailer for the latest trends, styles & the hottest deals. Shop dresses, tops, tees, leggings & more!",
+  "start_url": "/",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait"
+}

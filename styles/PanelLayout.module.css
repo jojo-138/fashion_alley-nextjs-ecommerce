@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  transition: visibility 0.2s ease-out;
+}
+
+.overlay {
+  height: 100%;
+  opacity: 0;
+  background-color: var(--overlay-color);
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+}
+
+.panel {
+  background-color: var(--bg-color-secondary);
+  position: absolute;
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.2s, opacity 0.2s ease-out;
+}
+
+.panel.left {
+  transform: translateX(-100%);
+}
+
+.panel.right {
+  transform: translateX(100%);
+  right: 0;
+}
+
+.panel.top {
+  transform: translateY(-100%);
+}
+
+.panel.center {
+  transform: scale(1.15) translate(-50%, -50%);
+  transform-origin: center;
+  top: 50%;
+  left: 50%;
+}
+
+.container.active {
+  visibility: visible;
+}
+
+.overlay.showOverlay {
+  opacity: 1;
+}
+
+.panel.showPanel {
+  transform: translateX(0);
+  opacity: 1;
+  overflow: auto;
+}
+
+.panel.center.showPanel {
+  transform: scale(1) translate(-50%, -50%);
+}
