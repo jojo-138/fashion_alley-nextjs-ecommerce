@@ -69,7 +69,7 @@ const CheckoutSuccess = ({ message }) => {
             flex-direction: column;
             margin-top: 10vh;
             padding: 1rem 3rem;
-            background-color: #d3d3d3;
+            background-color: var(--color-tertiary);
             border-radius: 2rem;
           }
           span {
