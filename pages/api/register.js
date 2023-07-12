@@ -36,7 +36,6 @@ export default withSessionRoute(async function register(req, res) {
       );
 
       await client.query('insert into carts (user_id) values ($1)', [id]);
-      await client.query('insert into wishlists (user_id) values ($1)', [id]);
       await client.query('COMMIT');
 
       await saveSession(req, id);
